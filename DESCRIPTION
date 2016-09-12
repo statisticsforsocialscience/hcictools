@@ -1,0 +1,11 @@
+Package: hcictools
+Type: Package
+Title: Supplies tools for analysis in psychological surveys
+Version: 0.1
+Date: 2016-09-09
+Author: André Calero Valdez
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: More about what it does (maybe more than one line)
+License: CC
+LazyData: TRUE
+Suggests: testthat
