@@ -19,9 +19,13 @@ knitr::opts_chunk$set(echo = TRUE)
 deps <- c("tidyverse", 
           "hcictools")
 
+# The following code is never executed, as it is bad style to install packages from code.
+# If you still want to install the required packages, go here if you want to install the dependencies
 if(FALSE){
-  # Go here if you want to install the dependencies
-  install.packages(deps)  
+  install.packages(deps)
+  install.packages("devtools")
+  library(devtools)
+  devtools::install_github("HCIC/r-tools")
 }
 
 # Actually loads all dependencies using the require method.
