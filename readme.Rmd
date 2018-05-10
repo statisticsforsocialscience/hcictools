@@ -1,30 +1,51 @@
 ---
 title: "hcic tools"
+author: "André Calero Valdez"
 output: github_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(corrplot)
+library(hcictools)
 ```
 
-## GitHub Documents
-
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+## Package Contents
+This is a package that contains helpful functions for survey data analysis. It is maintained by the Human-Computer Interaction Center at RWTH Aachen University.
 
 ## Including Code
 
-You can include R code in the document as follows:
+You can install this packages by running the following code.
 
-```{r cars}
-summary(cars)
+```{r install, eval=FALSE, echo=TRUE}
+  install.packages("devtools")
+  library(devtools)
+  devtools::install_github("HCIC/r-tools")
 ```
 
-## Including Plots
+## Plotting Features
 
-You can also embed plots, for example:
+### Correlation Plots
 
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r corplots, echot=TRUE, fig.width=5, fig.height=4}
+a <- c(1,2,3,8,4,5,6,7)
+b <- c(4,5,6,7,3,8,9,10)
+d <- c(4,2,5,2,5,2,1,5)
+df <- data.frame(a=a, b=b, d=d)
+
+cor.matrix.plot(df)
+
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+### Confidence Interval Plots
+It has a confidence interval plotting feature for indepedent sample tests.
+
+```{r ci-plot, echo=TRUE}
+
+plot_IS_meansCI(a, b)
+```
+
+## TBC
+More to follow

@@ -1,33 +1,50 @@
 hcic tools
 ================
+André Calero Valdez
 
-GitHub Documents
+Package Contents
 ----------------
 
-This is an R Markdown format used for publishing markdown documents to GitHub. When you click the **Knit** button all R code chunks are run and a markdown file (.md) suitable for publishing to GitHub is generated.
+This is a package that contains helpful functions for survey data analysis. It is maintained by the Human-Computer Interaction Center at RWTH Aachen University.
 
 Including Code
 --------------
 
-You can include R code in the document as follows:
+You can install this packages by running the following code.
 
 ``` r
-summary(cars)
+  install.packages("devtools")
+  library(devtools)
+  devtools::install_github("HCIC/r-tools")
 ```
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+Plotting Features
+-----------------
 
-Including Plots
----------------
+### Correlation Plots
 
-You can also embed plots, for example:
+``` r
+a <- c(1,2,3,8,4,5,6,7)
+b <- c(4,5,6,7,3,8,9,10)
+d <- c(4,2,5,2,5,2,1,5)
+df <- data.frame(a=a, b=b, d=d)
 
-![](readme_files/figure-markdown_github/pressure-1.png)
+cor.matrix.plot(df)
+```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+![](readme_files/figure-markdown_github/corplots-1.png)
+
+### Confidence Interval Plots
+
+It has a confidence interval plotting feature for indepedent sample tests.
+
+``` r
+plot_IS_meansCI(a, b)
+```
+
+![](readme_files/figure-markdown_github/ci-plot-1.png)
+
+TBC
+---
+
+More to follow
