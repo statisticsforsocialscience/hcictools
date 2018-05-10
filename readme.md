@@ -3,17 +3,18 @@ hcic tools
 André Calero Valdez
 
 -   [Package Contents](#package-contents)
--   [Including Code](#including-code)
+-   [Installing the package](#installing-the-package)
 -   [Plotting Features](#plotting-features)
--   [TBC](#tbc)
+-   [RWTH Palette](#rwth-palette)
+-   [TBC More to follow](#tbc-more-to-follow)
 
 Package Contents
 ----------------
 
 This is a package that contains helpful functions for survey data analysis. It is maintained by the Human-Computer Interaction Center at RWTH Aachen University.
 
-Including Code
---------------
+Installing the package
+----------------------
 
 You can install this packages by running the following code.
 
@@ -49,7 +50,16 @@ plot_IS_meansCI(a, b)
 
 ![](readme_files/figure-markdown_github/ci-plot-1.png)
 
-TBC
----
+RWTH Palette
+------------
 
-More to follow
+Drawing palettes and RWTH Corporate CI Colors
+
+``` r
+draw.palette(unlist( rwth.colorpalette() ))
+```
+
+![](readme_files/figure-markdown_github/corporate-1.png)
+
+TBC More to follow
+------------------
