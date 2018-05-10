@@ -6,6 +6,13 @@
 \usage{
 rgb2hex(r, g, b)
 }
+\arguments{
+\item{r}{red value}
+
+\item{g}{green value}
+
+\item{b}{blue value}
+}
 \description{
 converts rgb values to hex notation
 }

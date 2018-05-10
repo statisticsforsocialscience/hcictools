@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    number_sections: true
+    fig_caption: true
+    theme: default
+    includes:
+      before_body: doc_prefix.html
+      after_body: doc_suffix.html
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# Here the dependencies of this template are listed. You may add further libraries here
+deps <- c("tidyverse", 
+          "hcictools")
+
+if(FALSE){
+  # Go here if you want to install the dependencies
+  install.packages(deps)  
+}
+
+# Actually loads all dependencies using the require method.
+lapply(deps, require, character.only = TRUE)
+```
+
+# First Chapter {.tabset .tabset-fade .tabset-pills}
+## Subsection 1.1
+## Subsection 1.2
+
+# Second Chapter
+## Subsection 2

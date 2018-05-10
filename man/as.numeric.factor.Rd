@@ -2,10 +2,16 @@
 % Please edit documentation in R/utils.R
 \name{as.numeric.factor}
 \alias{as.numeric.factor}
-\title{Helper function to return factors as numerics}
+\title{as.numeric.factor}
 \usage{
 \method{as.numeric}{factor}(x)
 }
+\arguments{
+\item{x}{Vector that contains a factor.}
+}
+\value{
+Vector that contais numerics.
+}
 \description{
-Helper function to return factors as numerics
+Returns a numerical vector that was a factor vector. Is used to create means from likert data.
 }
