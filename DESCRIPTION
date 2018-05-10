@@ -9,3 +9,7 @@ Description: More about what it does (maybe more than one line)
 License: CC
 LazyData: TRUE
 Suggests: testthat
+Imports: 
+  corrplot
+Encoding: UTF-8
+RoxygenNote: 6.0.1
