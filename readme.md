@@ -2,6 +2,11 @@ hcic tools
 ================
 André Calero Valdez
 
+-   [Package Contents](#package-contents)
+-   [Including Code](#including-code)
+-   [Plotting Features](#plotting-features)
+-   [TBC](#tbc)
+
 Package Contents
 ----------------
 
