@@ -1,0 +1,129 @@
+---
+title: "Presentation Template for HCIC"
+subtitle: "Sozialwissenschaftliche Forschungsmethoden für Fortgeschrittene"
+author: "**Dr. André Calero Valdez**<br />Martina Ziefle <br /> <br />Human-Computer Interaction Center<br /> "
+date: "7.7.2018"
+output:
+  xaringan::moon_reader:
+    css: ["default", "default-fonts", "hcic.css"]  
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(cache = FALSE, fig.align = "center", dev = "png", fig.retina = 2, fig.asp=0.681)
+library(tidyverse)
+theme_set(theme_gray(base_size=20))
+```
+
+class: center, middle, inverse
+# Agenda 
+## Introduction
+## Related Work
+## Method
+## Results
+
+---
+
+# R als Taschenrechner
+## Mathematische Operatoren
+Wir können in R einfach addieren.
+```{r eval=T}
+c(3+4, 4+3)    
+5+7
+``` 
+
+
+???
+Notizen
+
+
+---
+class: center, middle
+
+# What's next?
+Something?   
+---
+class: center, middle 
+# Überschrift
+
+Text kann ich hier schreiben
+
+```{r test, fig.asp=0.28}
+x <- rnorm(n = 100, mean = 4, sd = 2)
+qplot(x, binwidth=0.4)
+```
+
+
+
+???
+Hier stehen Notizen zu dieser Folie 
+- Was kommt
+- Danach
+
+---
+# Einleitung
+
+- Test
+- Test 2
+- Test 3
+```{r, eval=F}
+  data %>% select(gender)
+```
+
+
+---
+
+# Überschrift
+## zweite Überschrift
+
+- Aufzählung
+- Aufzählung 2
+
+1. Nummerierung
+1. Nummerierung
+
+*Test* [Webseitenlink](http://www.google.de) 
+
+$$\sum{a_{i}x^{i}}$$
+
+---
+# Standardnormalverteilung
+## Histogramme für unterschiedliche Stichprobengrößen
+
+.pull-left[Stichprobengröße 1.000
+```{r histograms, dev='svg'}
+x <- rnorm(1000)
+d <- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2) 
+```
+]
+.pull-right[left
+```{r histograms2, dev='svg'}
+x <- rnorm(100)
+d <- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2)
+```
+]
+
+
+
+---
+# Standardnormalverteilung
+## Histogramme für unterschiedliche Stichprobengrößen
+
+Stichprobengröße 1.000
+```{r histograms3, fig.asp=0.68, dev='svg'}
+x <- rnorm(1000)
+d <- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2) 
+```
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Presentation Template for HCIC</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Dr. André Calero Valdez Martina Ziefle    Human-Computer Interaction Center" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="hcic.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Presentation Template for HCIC
+## Sozialwissenschaftliche Forschungsmethoden für Fortgeschrittene
+### <strong>Dr. André Calero Valdez</strong><br />Martina Ziefle <br /> <br />Human-Computer Interaction Center<br />
+### 7.7.2018
+
+---
+
+
+
+
+class: center, middle, inverse
+# Agenda 
+## Introduction
+## Related Work
+## Method
+## Results
+
+---
+
+# R als Taschenrechner
+## Mathematische Operatoren
+Wir können in R einfach addieren.
+
+```r
+c(3+4, 4+3)    
+```
+
+```
+## [1] 7 7
+```
+
+```r
+5+7
+```
+
+```
+## [1] 12
+```
+
+
+???
+Notizen
+
+
+---
+class: center, middle
+
+# What's next?
+Something?   
+---
+class: center, middle 
+# Überschrift
+
+Text kann ich hier schreiben
+
+
+```r
+x &lt;- rnorm(n = 100, mean = 4, sd = 2)
+qplot(x, binwidth=0.4)
+```
+
+&lt;img src="HcicPresentation_files/figure-html/test-1.png" width="504" style="display: block; margin: auto;" /&gt;
+
+
+
+???
+Hier stehen Notizen zu dieser Folie 
+- Was kommt
+- Danach
+
+---
+# Einleitung
+
+- Test
+- Test 2
+- Test 3
+
+```r
+  data %&gt;% select(gender)
+```
+
+
+---
+
+# Überschrift
+## zweite Überschrift
+
+- Aufzählung
+- Aufzählung 2
+
+1. Nummerierung
+1. Nummerierung
+
+*Test* [Webseitenlink](http://www.google.de) 
+
+`$$\sum{a_{i}x^{i}}$$`
+
+---
+# Standardnormalverteilung
+## Histogramme für unterschiedliche Stichprobengrößen
+
+.pull-left[Stichprobengröße 1.000
+
+```r
+x &lt;- rnorm(1000)
+d &lt;- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2) 
+```
+
+&lt;img src="HcicPresentation_files/figure-html/histograms-1.svg" width="504" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[left
+
+```r
+x &lt;- rnorm(100)
+d &lt;- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2)
+```
+
+&lt;img src="HcicPresentation_files/figure-html/histograms2-1.svg" width="504" style="display: block; margin: auto;" /&gt;
+]
+
+
+
+---
+# Standardnormalverteilung
+## Histogramme für unterschiedliche Stichprobengrößen
+
+Stichprobengröße 1.000
+
+```r
+x &lt;- rnorm(1000)
+d &lt;- data.frame(x)
+ggplot(d, aes(x=x)) + 
+  geom_histogram(binwidth = 0.2) 
+```
+
+&lt;img src="HcicPresentation_files/figure-html/histograms3-1.svg" width="504" style="display: block; margin: auto;" /&gt;
+    </textarea>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
