@@ -4,8 +4,8 @@
 \alias{prepare.data}
 \title{prepare.data}
 \usage{
-prepare.data(lowerMean, upperMean, lowerSE, upperSE, diffLo, diffHigh, labelA,
-  labelB, title)
+prepare.data(lowerMean, upperMean, lowerSE, upperSE, diffLo, diffHigh,
+  labelA, labelB, title)
 }
 \arguments{
 \item{title}{}

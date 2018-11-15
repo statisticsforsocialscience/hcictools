@@ -4,8 +4,8 @@
 \alias{plot.CI}
 \title{plot.CI Plots two independent sample CI}
 \usage{
-\method{plot}{CI}(d, titleScale = "Dependent Variable", delta, range = c(1,
-  6), autorange = TRUE)
+\method{plot}{CI}(d, titleScale = "Dependent Variable", delta,
+  range = c(1, 6), autorange = TRUE)
 }
 \arguments{
 \item{d}{Data Frame}
