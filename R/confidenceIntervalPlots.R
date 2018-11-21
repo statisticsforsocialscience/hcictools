@@ -118,7 +118,7 @@ prepare.data <- function(lowerMean, upperMean, lowerSE, upperSE, diffLo, diffHig
 #' @export
 #'
 #' @examples
-#' mean.se(c(1, 2, 3, 4, 5, 6))
+#' mean_se(c(1, 2, 3, 4, 5, 6))
 mean_se <- function(x){
     sd(x)/sqrt(length(x))
 

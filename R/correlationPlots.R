@@ -13,7 +13,7 @@
 #'
 cor.matrix.plot <- function(data) {
   rwthcolors <- rwth.colorpalette()
-  p <- cor.mtest(data, conf.level = .95)
+  p <- corrplot::cor.mtest(data, conf.level = .95)
   col <- colorRampPalette(c(rwthcolors$red, "#FFFFFF", rwthcolors$blue))
   cor(data, use = "pairwise.complete.obs") %>% corrplot( method = "color", col = col(200),
                                                          type = "upper", order = "hclust", number.cex = .7,
