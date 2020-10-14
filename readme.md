@@ -21,7 +21,7 @@ You can install this packages by running the following code.
 ``` r
   install.packages("devtools")
   library(devtools)
-  devtools::install_github("HCIC/r-tools")
+  devtools::install_github("statisticsforsocialscience/hcictools")
 ```
 
 Plotting Features
