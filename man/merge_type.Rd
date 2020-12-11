@@ -7,7 +7,14 @@
 merge_type(d1, d2, ordered = FALSE)
 }
 \arguments{
+\item{d1}{first data frame}
+
+\item{d2}{second data frame}
+
 \item{ordered}{}
+}
+\value{
+
 }
 \description{
 Merges two dataframes

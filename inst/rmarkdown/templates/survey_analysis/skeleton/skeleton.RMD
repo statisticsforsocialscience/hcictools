@@ -61,15 +61,16 @@ raw <- read_sav(data_filename)
 ```{r renaming_variables}
 
 # select the relevant columns, we have four examples of how to select variables
-raw_shorlist <- raw %>% select(starts_with("q"), #use all variables that start with q
+raw_shortlist <- raw %>% select(starts_with("q"), #use all variables that start with q
                                starts_with("p"), # and p
-                               -num_range("q",4:6, width=4), # remove q0004 to q0006
+                               -num_range("q",4:6, width = 4), # remove q0004 to q0006
                                -starts_with("q0007") 
                                )
 
 # rename individual variables and rename a set of variables, here: q002_*****
-data <- raw_shorlist %>% rename (gender = q0001) %>% 
-  rename_at(vars( contains("q002_") ), funs( paste0("shopping_behavior", 1:5 ) ) )
+data <- raw_shortlist %>% 
+  rename(gender = q0001) %>%
+  rename_at(vars(contains("q002_")), funs(paste0("shopping_behavior", 1:5)))
 ```
 
 ### Adjust variable levels

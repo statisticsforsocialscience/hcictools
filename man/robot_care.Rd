@@ -4,12 +4,14 @@
 \name{robot_care}
 \alias{robot_care}
 \title{Attitudes towards robotic care.}
-\format{A data frame with 53940 rows and 10 variables:
+\format{
+A data frame with 53940 rows and 10 variables:
 \describe{
   \item{age}{age of participant, in years}
   \item{carat}{weight of the diamond, in carats}
   ...
-}}
+}
+}
 \source{
 Self-Collected \url{http://www.diamondse.info/}
 }

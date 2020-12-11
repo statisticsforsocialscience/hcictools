@@ -11,10 +11,13 @@ cor.matrix.plot(data)
 
 \item{conf.level}{Level of significance (default .95)}
 }
+\value{
+
+}
 \description{
 Plots a correlation matrix plot. The to
 }
 \examples{
-data \%>\% select(var1, var2) \%>\% cor.matrix.plot()
+cars \%>\% dplyr::select(speed, dist) \%>\% cor.matrix.plot()
 
 }

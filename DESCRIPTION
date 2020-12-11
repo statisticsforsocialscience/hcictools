@@ -10,6 +10,12 @@ License: CC0
 LazyData: TRUE
 Suggests: testthat
 Imports: 
-  corrplot, tidyverse
+    corrplot,
+    tidyverse,
+    magrittr,
+    lubridate,
+    dplyr,
+    readr,
+    stringr
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1

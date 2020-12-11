@@ -30,7 +30,7 @@ get.delta.range <- function(data, steps = 4) {
 #'
 #' @return
 #'
-#' @examples
+# examples
 plot.CI <- function(d, titleScale = "Dependent Variable", delta, range = c(1, 6), autorange = TRUE) {
     if (autorange) {
         range = c(0, max(c(d$upper[1:2], max(d$mean[1:2] + ceiling(d$upper[3])))))
@@ -78,21 +78,21 @@ plot.CI <- function(d, titleScale = "Dependent Variable", delta, range = c(1, 6)
 
 #' prepare.data
 #'
-#' Utility function used to create a data.frame taht contains the values needed for a CI plot.
+#' Utility function used to create a data.frame that contains the values needed for a CI plot.
 #'
-#' @param lowerMean
-#' @param upperMean
-#' @param lowerSE
-#' @param upperSE
-#' @param diffLo
-#' @param diffHigh
-#' @param labelA
-#' @param labelB
-#' @param title
+#' @param lowerMean the lower mean
+#' @param upperMean the upper mean
+#' @param lowerSE the lower se
+#' @param upperSE the upper se
+#' @param diffLo the differences between the lows(?)
+#' @param diffHigh the differnces between the highs(?)
+#' @param labelA the label for a
+#' @param labelB the label for b
+#' @param title the title
 #'
 #' @return
 #'
-#' @examples
+# @examples
 prepare.data <- function(lowerMean, upperMean, lowerSE, upperSE, diffLo, diffHigh, labelA, labelB, title) {
 
     tempvalue <- c(lowerMean, upperMean)
@@ -138,7 +138,7 @@ mean_se <- function(x){
 #' @export
 #'
 #' @examples
-#' plot.IS.meansCI(c(1, 2, 3), c(3, 4, 5))
+#' plot_IS_meansCI(c(1, 2, 3), c(3, 4, 5))
 #'
 plot_IS_meansCI <- function(x, y, labelA = "A", labelB = "B", title = "Dependent Variable", range = c(1, 0)) {
     t <- t.test(x, y)
@@ -148,7 +148,8 @@ plot_IS_meansCI <- function(x, y, labelA = "A", labelB = "B", title = "Dependent
 
     # Should I autorange the plot?
     autorange <- T
-    if(range[2]!=0) autorange <- F
+    if (range[2] != 0)
+        autorange <- F
 
     plot.CI(temp, range = range, autorange = autorange)
 }
