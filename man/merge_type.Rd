@@ -11,11 +11,8 @@ merge_type(d1, d2, ordered = FALSE)
 
 \item{d2}{second data frame}
 
-\item{ordered}{}
-}
-\value{
-
+\item{ordered}{maintain the order?}
 }
 \description{
-Merges two dataframes
+Merges two dataframes (I don't know what this was for. Will remove it soon.)
 }

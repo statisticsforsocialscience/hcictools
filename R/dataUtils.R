@@ -13,11 +13,4 @@
 # @examples
 copy_labels <- function(from, to){
   warning("This is deprecated and will be removed in the next iteration. Use labelled::copy_labels.")
-  varnames <- names(to)
-  for (name in varnames) {
-    to[name] <- set_label(to[name], get_label(from[name]))
-    to[name] <-
-      set_labels(to[name], labels = get_labels(from[name], include.values = T))
-  }
-  to
 }

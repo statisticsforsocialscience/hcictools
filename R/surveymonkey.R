@@ -12,9 +12,9 @@ require(tidyverse)
 load_surveymonkey_csv <- function(filename) {
   .Deprecated(msg = "This function is deprecated and will be removed in the next release.")
   suppressWarnings(
-    header <- read_csv(filename, n_max = 1))
+    header <- readr::read_csv(filename, n_max = 1))
   suppressWarnings(
-    raw <- read_csv(filename, skip = 1)
+    raw <- readr::read_csv(filename, skip = 1)
   )
   col_names <- paste(names(header), names(raw))
   names(raw) <- col_names
@@ -22,7 +22,7 @@ load_surveymonkey_csv <- function(filename) {
   remove_nbsp <- function(text){
     gsub("\u00A0", " ", text, fixed = TRUE)
   }
-  raw <- raw %>% mutate_if(is.character,remove_nbsp)
+  raw <- raw %>% dplyr::mutate_if(is.character,remove_nbsp)
 
   raw
 }
@@ -57,6 +57,7 @@ name_variables <- function(df, columnvector) {
 #'
 # @examples
 add_survey_response_duration <- function(df){
+  date_created <- date_modified <- newcreate <- newmodified <- modifieddate <- createdate <- NULL
   .Deprecated(msg = "This function is deprecated and will be removed in the next release.")
   if (!"date_created" %in% names(df)) {
     stop("Error: Dataframe must contain a column named `date_created`", call. = F)

@@ -4,18 +4,18 @@
 \alias{cor.matrix.plot}
 \title{cor.matrix.plot}
 \usage{
-cor.matrix.plot(data)
+cor.matrix.plot(data, conf.level = 0.95)
 }
 \arguments{
-\item{data}{Data frame to plot. Use dplyer::select to filter variables to use.}
+\item{data}{Data frame to plot. Use `dplyr::select` to filter variables to use.}
 
 \item{conf.level}{Level of significance (default .95)}
 }
 \value{
-
+nothing
 }
 \description{
-Plots a correlation matrix plot. The to
+Plots a correlation matrix plot.
 }
 \examples{
 cars \%>\% dplyr::select(speed, dist) \%>\% cor.matrix.plot()

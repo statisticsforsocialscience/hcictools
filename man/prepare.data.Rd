@@ -36,7 +36,7 @@ prepare.data(
 \item{title}{the title}
 }
 \value{
-
+data.frame with information to plot
 }
 \description{
 Utility function used to create a data.frame that contains the values needed for a CI plot.

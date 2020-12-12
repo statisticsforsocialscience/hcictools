@@ -19,12 +19,12 @@
 
 \item{delta}{a}
 
-\item{range}{Axis Ranges}
+\item{range}{Axis Ranges, default = c(1, 6)}
 
-\item{autorange}{}
+\item{autorange}{should it autorange (default = TRUE)}
 }
 \value{
-
+a plot
 }
 \description{
 plot.CI Plots two independent sample CI

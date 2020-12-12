@@ -12,7 +12,7 @@ get.delta.range(data, steps = 4)
 \item{steps}{Size of the stride}
 }
 \value{
-
+a range
 }
 \description{
 Utility function to generate the delta axis

@@ -13,9 +13,6 @@ draw.palette(col, border = "light gray", ...)
 
 \item{...}{Additional params forwarded to plot.}
 }
-\value{
-nothing
-}
 \description{
 Utility function that draws a palette.
 }

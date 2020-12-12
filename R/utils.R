@@ -8,13 +8,12 @@
 #' @param border Border used for plotting
 #' @param ... Additional params forwarded to plot.
 #'
-#' @return nothing
 #' @export
 #'
 # @examples
 draw.palette <- function(col, border = "light gray", ...) {
   n <- length(col)
-  plot(
+  graphics::plot(
     0,
     0,
     type = "n",
@@ -25,32 +24,24 @@ draw.palette <- function(col, border = "light gray", ...) {
     ylab = "",
     ...
   )
-  rect(0:(n - 1) / n, 0, 1:n / n, 1, col = col, border = border)
+  graphics::rect(0:(n - 1) / n, 0, 1:n / n, 1, col = col, border = border)
 }
 
 
 
 #' merge.type
 #'
-#' Merges two dataframes
+#' Merges two dataframes (I don't know what this was for. Will remove it soon.)
 #'
 #' @param d1 first data frame
 #' @param d2 second data frame
-#' @param ordered
+#' @param ordered maintain the order?
 #'
-#' @return
 #' @export
 #'
 # @examples
 merge_type <- function(d1, d2, ordered=FALSE){
-  .Deprecated(msg = "This function is deprecated and will be removed in the next release.")
-  if (ordered) {
-    data <- rbind(d1, d2)
-  }
-  else {
-    data <- merge.ordered(d1, d2)
-  }
-  return(data)
+  .Deprecated(msg = "This function is deprecated.")
 }
 
 
@@ -60,7 +51,7 @@ merge_type <- function(d1, d2, ordered=FALSE){
 #' @param g green value
 #' @param b blue value
 rgb2hex <- function(r,g,b) {
-  rgb(r, g, b, maxColorValue = 255)
+  grDevices::rgb(r, g, b, maxColorValue = 255)
 }
 
 

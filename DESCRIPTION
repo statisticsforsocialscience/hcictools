@@ -16,6 +16,10 @@ Imports:
     lubridate,
     dplyr,
     readr,
-    stringr
+    stringr,
+    stats,
+    grDevices,
+    tibble,
+    graphics
 Encoding: UTF-8
 RoxygenNote: 7.1.1
