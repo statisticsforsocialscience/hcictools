@@ -1,7 +1,7 @@
 Package: hcictools
 Type: Package
 Title: Supplies tools for analysis in psychological surveys
-Version: 1.0
+Version: 1.0.1
 Date: 2018-05-09
 Author: André Calero Valdez
 Maintainer: André Calero Valdez <calero-valdez@comm.rwth-aachen.det>

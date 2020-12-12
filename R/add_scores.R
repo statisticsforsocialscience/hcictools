@@ -62,4 +62,4 @@ if (FALSE) {
   keys <- list(KUT = c("KUT1", "-KUT2", "KUT3", "KUT4"))
   res <- robo_care_raw  %>% add_scores("KUT", keys)
 
-}
+  }
