@@ -1,8 +1,8 @@
 ---
 title: "Presentation Template for HCIC"
-subtitle: "Title"
-author: "**Dr. André Calero Valdez**<br />Martina Ziefle <br /> <br />Human-Computer Interaction Center<br /> "
-date: "7.7.2018"
+subtitle: "SubTitle"
+author: "**Dr. André Calero Valdez**<br /><br />Human-Computer Interaction Center<br /> "
+date: "`r format(Sys.time(), '%d. %B %Y')`"
 output:
   xaringan::moon_reader:
     css: ["default", "default-fonts", "hcic.css"]  

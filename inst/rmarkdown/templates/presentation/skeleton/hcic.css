@@ -9,6 +9,19 @@
 
 body { font-family: 'Open Sans' }
 
+.img-75 {
+  text-align: center;
+  width: 500px !important;
+  height: 320px !important;
+}
+
+.img-50 {
+  text-align: center;
+  width: 400px !important;
+  height: 220px !important;
+}
+
+
 .grViz {
   margin-left:auto; margin-right:auto; display:block;
 }
@@ -21,8 +34,8 @@ div.remark-slide-container h1 {
 	color: #00549F;
 	letter-spacing: -1px;
   font-size: 42px;
-  line-height: 0.5em;
-  font-weight: normal;
+  line-height: 1.1em;
+  font-weight: bold;
 }
 
 .inverse h1 {
@@ -48,15 +61,15 @@ div.remark-slide-container h3 {
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
 	letter-spacing: -1px;
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: normal;
-	padding-top: 50px
+	padding-top: 10px
 }
 
 .title-slide {
 	background-color: #fff;
-  background-image: url(http://acalerovaldez.updog.co/hcic.png);
-	background-position: center bottom 120px;
+  background-image: url('figs/hcic.png');
+	background-position: center bottom 100px;
 	background-size: 50%;
 	border-bottom: 0px solid  #00549F;
 	box-shadow:  0 55px 0 #fff;
@@ -109,7 +122,52 @@ div.remark-slide-container .fullscale p {
 
 }
 .remark-slide-content {
-	font-size: 18px;
+	font-size: 20px;
 	text-shadow: 0 0 0px #333;
 
+}
+
+.footnote {
+  font-size: 14px;
+
+}
+
+.footer {
+    color: black;
+    position: fixed;
+    top: 95%;
+    left: 0;
+    font-size: 11pt;
+    text-align: center;
+    width: 100%;
+}
+
+/* RWTH Link Color und Figure Caption sizes*/
+
+a {
+  color: #E30066;
+}
+
+.figurecaption {
+  display: block;
+   font-size: 14px;
+   line-height: 1.15em;
+   text-align: center;
+}
+
+
+.red {
+  color: #cc071e;
+}
+
+.orange {
+  color: #F6A800;
+}
+
+.yellow {
+  color: #FFED00;
+}
+
+.gray {
+  color: #CFD1D2;
 }
