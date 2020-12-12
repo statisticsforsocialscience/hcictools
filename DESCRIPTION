@@ -1,7 +1,7 @@
 Package: hcictools
 Type: Package
 Title: Supplies tools for analysis in psychological surveys
-Version: 0.2
+Version: 1.0.1
 Date: 2018-05-09
 Author: André Calero Valdez
 Maintainer: André Calero Valdez <calero-valdez@comm.rwth-aachen.det>
@@ -10,6 +10,22 @@ License: CC0
 LazyData: TRUE
 Suggests: testthat
 Imports: 
-  corrplot, tidyverse
+    corrplot,
+    tidyverse,
+    magrittr,
+    lubridate,
+    dplyr,
+    readr,
+    stringr,
+    stats,
+    grDevices,
+    tibble,
+    graphics,
+    psych,
+    utils,
+    dataforsocialscience,
+    glue,
+    haven,
+    labelled
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1

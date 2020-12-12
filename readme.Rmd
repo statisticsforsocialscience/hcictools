@@ -1,11 +1,39 @@
 ---
-title: "hcic tools"
-author: "André Calero Valdez"
-output: 
-  github_document:
-    toc: true
-    toc_depth: 2
+output: github_document
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# hcictools
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of hcictools is to ...
+
+## Installation
+
+You can install the released version of hcictools from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("hcictools")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("HCIC/r-tools")
+```
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -22,9 +50,8 @@ This is a package that contains helpful functions for survey data analysis. It i
 You can install this packages by running the following code.
 
 ```{r install, eval=FALSE, echo=TRUE}
-  install.packages("devtools")
-  library(devtools)
-  devtools::install_github("HCIC/r-tools")
+  install.packages("remotes")
+  remotes::install_github("HCIC/r-tools")
 ```
 
 ## Plotting Features
@@ -35,7 +62,7 @@ You can install this packages by running the following code.
 a <- c(1,2,3,8,4,5,6,7)
 b <- c(4,5,6,7,3,8,9,10)
 d <- c(4,2,5,2,5,2,1,5)
-df <- data.frame(a=a, b=b, d=d)
+df <- data.frame(a = a, b = b, d = d)
 
 cor.matrix.plot(df)
 
@@ -62,3 +89,4 @@ draw.palette(unlist( rwth.colorpalette() ))
 
 
 ## TBC More to follow
+

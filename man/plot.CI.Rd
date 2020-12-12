@@ -4,8 +4,13 @@
 \alias{plot.CI}
 \title{plot.CI Plots two independent sample CI}
 \usage{
-\method{plot}{CI}(d, titleScale = "Dependent Variable", delta,
-  range = c(1, 6), autorange = TRUE)
+\method{plot}{CI}(
+  d,
+  titleScale = "Dependent Variable",
+  delta,
+  range = c(1, 6),
+  autorange = TRUE
+)
 }
 \arguments{
 \item{d}{Data Frame}
@@ -14,12 +19,12 @@
 
 \item{delta}{a}
 
-\item{range}{Axis Ranges}
+\item{range}{Axis Ranges, default = c(1, 6)}
 
-\item{autorange}{}
+\item{autorange}{should it autorange (default = TRUE)}
 }
 \value{
-
+a plot
 }
 \description{
 plot.CI Plots two independent sample CI

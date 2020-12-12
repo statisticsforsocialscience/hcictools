@@ -7,8 +7,12 @@
 merge_type(d1, d2, ordered = FALSE)
 }
 \arguments{
-\item{ordered}{}
+\item{d1}{first data frame}
+
+\item{d2}{second data frame}
+
+\item{ordered}{maintain the order?}
 }
 \description{
-Merges two dataframes
+Merges two dataframes (I don't know what this was for. Will remove it soon.)
 }

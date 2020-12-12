@@ -4,8 +4,14 @@
 \alias{plot_IS_meansCI}
 \title{plot.IS.meansCI}
 \usage{
-plot_IS_meansCI(x, y, labelA = "A", labelB = "B",
-  title = "Dependent Variable", range = c(1, 0))
+plot_IS_meansCI(
+  x,
+  y,
+  labelA = "A",
+  labelB = "B",
+  title = "Dependent Variable",
+  range = c(1, 0)
+)
 }
 \arguments{
 \item{x}{vector of sample a}
@@ -27,6 +33,6 @@ plots
 plot.IS.meansCI
 }
 \examples{
-plot.IS.meansCI(c(1, 2, 3), c(3, 4, 5))
+plot_IS_meansCI(c(1, 2, 3), c(3, 4, 5))
 
 }

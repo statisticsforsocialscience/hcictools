@@ -4,15 +4,40 @@
 \alias{prepare.data}
 \title{prepare.data}
 \usage{
-prepare.data(lowerMean, upperMean, lowerSE, upperSE, diffLo, diffHigh,
-  labelA, labelB, title)
+prepare.data(
+  lowerMean,
+  upperMean,
+  lowerSE,
+  upperSE,
+  diffLo,
+  diffHigh,
+  labelA,
+  labelB,
+  title
+)
 }
 \arguments{
-\item{title}{}
+\item{lowerMean}{the lower mean}
+
+\item{upperMean}{the upper mean}
+
+\item{lowerSE}{the lower se}
+
+\item{upperSE}{the upper se}
+
+\item{diffLo}{the differences between the lows(?)}
+
+\item{diffHigh}{the differnces between the highs(?)}
+
+\item{labelA}{the label for a}
+
+\item{labelB}{the label for b}
+
+\item{title}{the title}
 }
 \value{
-
+data.frame with information to plot
 }
 \description{
-Utility function used to create a data.frame taht contains the values needed for a CI plot.
+Utility function used to create a data.frame that contains the values needed for a CI plot.
 }
