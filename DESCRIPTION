@@ -20,6 +20,12 @@ Imports:
     stats,
     grDevices,
     tibble,
-    graphics
+    graphics,
+    psych,
+    utils,
+    dataforsocialscience,
+    glue,
+    haven,
+    labelled
 Encoding: UTF-8
 RoxygenNote: 7.1.1
