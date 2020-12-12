@@ -5,12 +5,12 @@
 \title{This function automatically scores a set of items and creates a scale variable.
 It detects inverse coding using the psych::alpha function.}
 \usage{
-auto_score(df, prefix)
+auto_score(d, prefix)
 }
 \arguments{
-\item{df}{a dataframe that contains an item set}
-
 \item{prefix}{the prefix used in all items and also the name of the new scale.}
+
+\item{df}{a dataframe that contains an item set}
 }
 \value{
 the dataframe with the new scale column
