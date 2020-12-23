@@ -23,7 +23,6 @@ Imports:
     graphics,
     psych,
     utils,
-    dataforsocialscience,
     glue,
     haven,
     labelled
