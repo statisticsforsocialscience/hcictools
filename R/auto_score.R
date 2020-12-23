@@ -17,12 +17,14 @@
 # @import dataforsocialscience
 # @importFrom glue glue
 #
-# @examples
-# library(dataforsocialscience)
-# robo_care_raw %>% auto_score("KUT")
-auto_score <- function(d, prefix) {
+#' @examples
+#' \dontrun{
+#' library(dataforsocialscience)
+#' robo_care_raw %>% auto_score("KUT")
+#' }
+auto_score <- function(df, prefix) {
   #prefix <- "KUT"
-  intermediate <- d %>%
+  intermediate <- df %>%
     dplyr::select(dplyr::starts_with(prefix)) %>%
     dplyr::mutate_all(haven::zap_labels)
 
@@ -38,7 +40,7 @@ auto_score <- function(d, prefix) {
 
   names(key_list) <- prefix
 
-  add_scores(d, prefix, key_list)
+  add_scores(df, prefix, key_list)
 }
 
 
