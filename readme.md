@@ -36,8 +36,9 @@ RWTH Aachen University.
 You can install this packages by running the following code.
 
 ``` r
-  install.packages("remotes")
-  remotes::install_github("HCIC/r-tools")
+  install.packages("devtools")
+  library(devtools)
+  devtools::install_github("statisticsforsocialscience/hcictools")
 ```
 
 ## Plotting Features
