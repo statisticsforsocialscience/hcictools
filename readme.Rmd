@@ -18,21 +18,15 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of hcictools is to ...
+The goal of hcictools is to make frequently recurring tasks in our work easier.
 
 ## Installation
 
 You can install the released version of hcictools from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("hcictools")
-```
-
-And the development version from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("HCIC/r-tools")
+# install.packages("remotes")
+remotes::install_github("statisticsforsocialscience/hcictools")
 ```
 
 ```{r setup, include=FALSE}
@@ -86,6 +80,16 @@ Drawing palettes and RWTH Corporate CI Colors
 draw.palette(unlist( rwth.colorpalette() ))
 
 ```
+
+
+## auto-code scale
+
+Automatically extract item orientation and create mean score of items that have a prefix.
+
+```{r}
+psych::bfi %>% head(50) %>% auto_score("A")
+```
+
 
 
 ## TBC More to follow
