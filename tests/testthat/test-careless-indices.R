@@ -14,13 +14,12 @@ test_that("careless_indices accurately checks illegal arguments in speeder_analy
 
 test_that("test basic functionality",{
 
-  rows <- nrow(psych::bfi)
   test_data <- tibble::tibble(
-    ResponseId = 1:rows,
-    `Duration (in seconds)` = stats::rnorm(rows, mean = 100, sd = 50),
+    ResponseId = 1:nrow(psych::bfi),
+    duration = stats::rnorm(nrow(psych::bfi), mean = 100, sd = 50),
     psych::bfi)
 
 
-  expect_error(careless_indices(test_data, likert_vector = c(3:28)), NA)
+  testthat::expect_error(careless_indices(test_data, duration_column = "duration", id_column = "ResponseId", likert_vector = c(3:28)), NA)
 
 })

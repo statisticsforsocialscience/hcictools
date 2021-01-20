@@ -55,6 +55,7 @@ careless_indices <- function(dat,
     }
     # data.quality contains the filtered list
 
+    # Ooops will break
     quality.indices <-
       data.frame(ResponseId = data.quality$ResponseId)
 
@@ -93,7 +94,7 @@ careless_indices <- function(dat,
     # join by merging, TODO needs testing
     res <- merge(x = dat,
                  y = quality.indices,
-                 by = "ResponseId",
+                 by = id_column,
                  all.x = TRUE)
     res
 }
