@@ -1,10 +1,11 @@
 Package: hcictools
 Type: Package
 Title: Supplies tools for analysis in psychological surveys
-Version: 1.0.1
-Date: 2018-05-09
-Author: André Calero Valdez
-Maintainer: André Calero Valdez <calero-valdez@comm.rwth-aachen.det>
+Version: 1.1.1
+Date: 2021-01-20
+Authors@R: c(person("André", "Calero Valdez", role = c("aut", "cre"), email = "andrecalerovaldez@gmail.com"),
+             person("Julian", "Hildebrandt", role = "ctb", email = "super-dude@gmx.de")
+             )
 Description: This package contains tools that are useful when analyzing survey data. 
 License: CC0
 LazyData: TRUE
@@ -25,6 +26,7 @@ Imports:
     utils,
     glue,
     haven,
-    labelled
+    labelled,
+    careless
 Encoding: UTF-8
 RoxygenNote: 7.1.1

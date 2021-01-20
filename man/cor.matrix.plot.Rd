@@ -2,7 +2,7 @@
 % Please edit documentation in R/correlationPlots.R
 \name{cor.matrix.plot}
 \alias{cor.matrix.plot}
-\title{cor.matrix.plot}
+\title{Plots a correlation matrix plot.}
 \usage{
 cor.matrix.plot(data, conf.level = 0.95)
 }
@@ -12,10 +12,10 @@ cor.matrix.plot(data, conf.level = 0.95)
 \item{conf.level}{Level of significance (default .95)}
 }
 \value{
-nothing
+The function is called for its side-effects (plot).
 }
 \description{
-Plots a correlation matrix plot.
+This function creates a plot of correlations with sensible defaults.
 }
 \examples{
 cars \%>\% dplyr::select(speed, dist) \%>\% cor.matrix.plot()

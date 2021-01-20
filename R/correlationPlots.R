@@ -1,11 +1,11 @@
-#' cor.matrix.plot
-#'
 #' Plots a correlation matrix plot.
+#'
+#' This function creates a plot of correlations with sensible defaults.
 #'
 #' @param data Data frame to plot. Use `dplyr::select` to filter variables to use.
 #' @param conf.level Level of significance (default .95)
 #'
-#' @return nothing
+#' @return The function is called for its side-effects (plot).
 #' @importFrom magrittr "%>%"
 #' @export
 #'
