@@ -20,6 +20,8 @@ test_that("test basic functionality",{
     psych::bfi)
 
 
-  testthat::expect_error(careless_indices(test_data, duration_column = "duration", id_column = "ResponseId", likert_vector = c(3:28)), NA)
-
+  testthat::expect_error(careless_indices(test_data, duration_column = "duration",
+                                          id_column = "ResponseId", likert_vector = c(3:28)))
+  testthat::expect_error(careless_indices(test_data, duration_column = "duration",
+                                          id_column = "ResponseId", likert_vector = c(3:28), antonyms = F, synonyms = F), NA)
 })

@@ -87,10 +87,30 @@ draw.palette(unlist( rwth.colorpalette() ))
 Automatically extract item orientation and create mean score of items that have a prefix.
 
 ```{r}
-psych::bfi %>% head(50) %>% auto_score("A")
+newbfi <- psych::bfi %>% head(50) %>% auto_score("A")
 ```
 
 
 
+## Careless indices
+
+```{r}
+test_data <- tibble::tibble(
+    ResponseId = 1:nrow(psych::bfi),
+    `Duration (in seconds)` = stats::rnorm(nrow(psych::bfi), mean = 100, sd = 50),
+    psych::bfi)
+
+
+  careless_indices(test_data, 
+                   duration_column = "Duration (in seconds)", 
+                   id_column = "ResponseId", 
+                   likert_vector = c(3:28)) %>% head()
+```
+
+
 ## TBC More to follow
+
+
+
+
 

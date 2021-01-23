@@ -9,7 +9,9 @@ careless_indices(
   speeder_analysis = "median/2",
   likert_vector = NULL,
   duration_column = "Duration (in seconds)",
-  id_column = "ResponseId"
+  id_column = "ResponseId",
+  antonyms = TRUE,
+  synonyms = TRUE
 )
 }
 \arguments{
@@ -28,6 +30,10 @@ Duration (in seconds), which is used by Qualtrix.}
 
 \item{id_column}{A string that contains the name of a id column. As a default
 we use "ResponseId", which is used by Qualtrix.}
+
+\item{antonyms}{Whether or not to test for psychometric antonyms (default: T)}
+
+\item{synonyms}{Whether or not to test for psychometric synonyms (default: T)}
 }
 \value{
 Returns an updated dataframe containing indices

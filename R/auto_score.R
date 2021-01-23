@@ -28,10 +28,10 @@ auto_score <- function(df, prefix) {
     dplyr::select(dplyr::starts_with(prefix)) %>%
     dplyr::mutate_all(haven::zap_labels)
 
-  print(intermediate)
+  #print(intermediate)
   res <- psych::alpha(x = intermediate, warnings = FALSE, check.keys = TRUE)
 
-  print(res)
+  #print(res)
   # generate fitting key list
   key_list <- res$keys %>%
     as.character() %>%

@@ -16,6 +16,8 @@
 #' Duration (in seconds), which is used by Qualtrix.
 #' @param id_column A string that contains the name of a id column. As a default
 #' we use "ResponseId", which is used by Qualtrix.
+#' @param antonyms Whether or not to test for psychometric antonyms (default: T)
+#' @param synonyms Whether or not to test for psychometric synonyms (default: T)
 #'
 #' @return Returns an updated dataframe containing indices
 #' @export
@@ -25,7 +27,9 @@ careless_indices <- function(dat,
                              speeder_analysis = "median/2",
                              likert_vector = NULL,
                              duration_column = "Duration (in seconds)",
-                             id_column = "ResponseId")  {
+                             id_column = "ResponseId",
+                             antonyms = TRUE,
+                             synonyms = TRUE)  {
 
 
   stopifnot("speeder_analysis must be either \"median\", \"median/2\",\"median/3\", FALSE, or a numeric value." =
@@ -76,10 +80,18 @@ careless_indices <- function(dat,
       # This (sensibly) works only without speeders ----
       df_likerts_numeric <-
         dplyr::mutate_all(data.quality[, likert_vector], as.numeric)
-      try(quality.indices$psychsyn <-
-            careless::psychsyn(df_likerts_numeric, critval = 0.6))
-      try(quality.indices$psychant <-
-            careless::psychsyn(df_likerts_numeric, critval = -0.6, anto = T))
+      if (synonyms) {
+        tryCatch(quality.indices$psychsyn <-
+              careless::psychsyn(df_likerts_numeric, critval = 0.6),
+              error = function(e) {
+                warning(e)
+              })
+      }
+      if (antonyms) {
+        tryCatch(quality.indices$psychant <-
+              careless::psychsyn(df_likerts_numeric, critval = -0.6, anto = T),
+              error = function(e) { warning(e) })
+      }
       temp <-
         careless::mahad(
           df_likerts_numeric,
