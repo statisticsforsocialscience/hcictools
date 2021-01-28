@@ -1,7 +1,7 @@
 Package: hcictools
 Type: Package
 Title: Supplies tools for analysis in psychological surveys
-Version: 1.1.1
+Version: 1.1.2
 Date: 2021-01-20
 Authors@R: c(person("André", "Calero Valdez", role = c("aut", "cre"), email = "andrecalerovaldez@gmail.com"),
              person("Julian", "Hildebrandt", role = "ctb", email = "super-dude@gmx.de")
@@ -27,6 +27,8 @@ Imports:
     glue,
     haven,
     labelled,
-    careless
+    careless,
+    jmv,
+    ggplot2
 Encoding: UTF-8
 RoxygenNote: 7.1.1

@@ -107,6 +107,21 @@ test_data <- tibble::tibble(
                    likert_vector = c(3:28)) %>% head()
 ```
 
+## Extract plots from JMV models
+
+```{r jmv_plot}
+ jmv_result <- jmv::ANOVA(
+    data = ToothGrowth,
+    dep = "len",
+    factors = c("supp", "dose"),
+    emMeans = list(
+      c("dose", "supp")))
+
+
+  get_emm_plot(jmv_result) + ggplot2::labs(title = "test")
+```
+
+
 
 ## TBC More to follow
 

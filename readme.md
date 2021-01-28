@@ -159,26 +159,42 @@ test_data <- tibble::tibble(
                    id_column = "ResponseId", 
                    likert_vector = c(3:28)) %>% head()
 #>   ResponseId Duration (in seconds) A1 A2 A3 A4 A5 C1 C2 C3 C4 C5 E1 E2 E3 E4 E5
-#> 1          1           171.8321173  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4
-#> 2          2            46.2753417  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3
-#> 3          3           -39.6450934  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5
-#> 4          4             0.3330881  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4
-#> 5          5            89.7692558  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5
-#> 6          6            80.5573190  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6
+#> 1          1              49.71579  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4
+#> 2          2              65.17885  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3
+#> 3          3              88.14612  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5
+#> 4          4             165.34330  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4
+#> 5          5             150.65549  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5
+#> 6          6              82.48188  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6
 #>   N1 N2 N3 N4 N5 O1 O2 O3 O4 O5 gender education age speeder longstr   avgstr
-#> 1  3  4  2  2  3  3  6  3  4  3      1        NA  16   FALSE       3 1.444444
-#> 2  3  3  3  5  5  4  2  4  3  3      2        NA  18    TRUE       4 1.444444
-#> 3  4  5  4  2  3  4  2  5  5  2      2        NA  17    TRUE       3 1.300000
-#> 4  2  5  2  4  1  3  3  4  3  5      2        NA  17    TRUE       3 1.444444
+#> 1  3  4  2  2  3  3  6  3  4  3      1        NA  16    TRUE       3 1.444444
+#> 2  3  3  3  5  5  4  2  4  3  3      2        NA  18   FALSE       4 1.444444
+#> 3  4  5  4  2  3  4  2  5  5  2      2        NA  17   FALSE       3 1.300000
+#> 4  2  5  2  4  1  3  3  4  3  5      2        NA  17   FALSE       3 1.444444
 #> 5  2  3  4  4  3  3  3  4  3  3      1        NA  17   FALSE       3 1.444444
 #> 6  3  5  2  2  3  4  3  5  6  1      2         3  21   FALSE       3 1.181818
 #>         irv psychsyn mahadraw mahadflag
-#> 1 0.9922779       NA 16.21056     FALSE
-#> 2 1.3032504       NA       NA        NA
-#> 3 1.1320506       NA       NA        NA
-#> 4 1.2006409       NA       NA        NA
-#> 5 1.0869860       NA 22.24578     FALSE
-#> 6 1.8745256       NA 26.74754     FALSE
+#> 1 0.9922779       NA       NA        NA
+#> 2 1.3032504       NA 25.32851     FALSE
+#> 3 1.1320506       NA 14.02721     FALSE
+#> 4 1.2006409       NA 29.32643     FALSE
+#> 5 1.0869860       NA 21.63706     FALSE
+#> 6 1.8745256       NA 26.75429     FALSE
 ```
+
+## Extract plots from JMV models
+
+``` r
+ jmv_result <- jmv::ANOVA(
+    data = ToothGrowth,
+    dep = "len",
+    factors = c("supp", "dose"),
+    emMeans = list(
+      c("dose", "supp")))
+
+
+  get_emm_plot(jmv_result) + ggplot2::labs(title = "test")
+```
+
+<img src="man/figures/README-jmv_plot-1.png" width="100%" /><img src="man/figures/README-jmv_plot-2.png" width="100%" />
 
 ## TBC More to follow
