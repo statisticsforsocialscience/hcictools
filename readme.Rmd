@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/statisticsforsocialscience/hcictools/workflows/R-CMD-check/badge.svg)](https://github.com/statisticsforsocialscience/hcictools/actions)
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The goal of hcictools is to make frequently recurring tasks in our work easier.
@@ -39,15 +40,6 @@ library(hcictools)
 
 ## Package Contents
 This is a package that contains helpful functions for survey data analysis. It is maintained by the Human-Computer Interaction Center at RWTH Aachen University.
-
-## Installing the package
-
-You can install this packages by running the following code.
-
-```{r install, eval=FALSE, echo=TRUE}
-  install.packages("remotes")
-  remotes::install_github("HCIC/r-tools")
-```
 
 ## Plotting Features
 

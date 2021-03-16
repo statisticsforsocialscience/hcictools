@@ -5,6 +5,9 @@
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/statisticsforsocialscience/hcictools/workflows/R-CMD-check/badge.svg)](https://github.com/statisticsforsocialscience/hcictools/actions)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
 
 The goal of hcictools is to make frequently recurring tasks in our work
@@ -25,15 +28,6 @@ remotes::install_github("statisticsforsocialscience/hcictools")
 This is a package that contains helpful functions for survey data
 analysis. It is maintained by the Human-Computer Interaction Center at
 RWTH Aachen University.
-
-## Installing the package
-
-You can install this packages by running the following code.
-
-``` r
-  install.packages("remotes")
-  remotes::install_github("HCIC/r-tools")
-```
 
 ## Plotting Features
 
@@ -56,7 +50,6 @@ It has a confidence interval plotting feature for indepedent sample
 tests.
 
 ``` r
-
 plot_IS_meansCI(a, b)
 ```
 
@@ -67,7 +60,6 @@ plot_IS_meansCI(a, b)
 Drawing palettes and RWTH Corporate CI Colors
 
 ``` r
-
 draw.palette(unlist( rwth.colorpalette() ))
 ```
 
@@ -159,26 +151,26 @@ test_data <- tibble::tibble(
                    id_column = "ResponseId", 
                    likert_vector = c(3:28)) %>% head()
 #>   ResponseId Duration (in seconds) A1 A2 A3 A4 A5 C1 C2 C3 C4 C5 E1 E2 E3 E4 E5
-#> 1          1              49.71579  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4
-#> 2          2              65.17885  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3
-#> 3          3              88.14612  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5
-#> 4          4             165.34330  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4
-#> 5          5             150.65549  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5
-#> 6          6              82.48188  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6
+#> 1          1              53.39314  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4
+#> 2          2             152.96502  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3
+#> 3          3             167.10410  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5
+#> 4          4              76.27920  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4
+#> 5          5              79.68593  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5
+#> 6          6              92.59065  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6
 #>   N1 N2 N3 N4 N5 O1 O2 O3 O4 O5 gender education age speeder longstr   avgstr
-#> 1  3  4  2  2  3  3  6  3  4  3      1        NA  16    TRUE       3 1.444444
+#> 1  3  4  2  2  3  3  6  3  4  3      1        NA  16   FALSE       3 1.444444
 #> 2  3  3  3  5  5  4  2  4  3  3      2        NA  18   FALSE       4 1.444444
 #> 3  4  5  4  2  3  4  2  5  5  2      2        NA  17   FALSE       3 1.300000
 #> 4  2  5  2  4  1  3  3  4  3  5      2        NA  17   FALSE       3 1.444444
 #> 5  2  3  4  4  3  3  3  4  3  3      1        NA  17   FALSE       3 1.444444
 #> 6  3  5  2  2  3  4  3  5  6  1      2         3  21   FALSE       3 1.181818
-#>         irv psychsyn mahadraw mahadflag
-#> 1 0.9922779       NA       NA        NA
-#> 2 1.3032504       NA 25.32851     FALSE
-#> 3 1.1320506       NA 14.02721     FALSE
-#> 4 1.2006409       NA 29.32643     FALSE
-#> 5 1.0869860       NA 21.63706     FALSE
-#> 6 1.8745256       NA 26.75429     FALSE
+#>         irv psychsyn mahadflag
+#> 1 0.9922779       NA     FALSE
+#> 2 1.3032504       NA     FALSE
+#> 3 1.1320506       NA     FALSE
+#> 4 1.2006409       NA     FALSE
+#> 5 1.0869860       NA     FALSE
+#> 6 1.8745256       NA     FALSE
 ```
 
 ## Extract plots from JMV models
