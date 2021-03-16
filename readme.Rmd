@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # hcictools
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/statisticsforsocialscience/hcictools/workflows/R-CMD-check/badge.svg)](https://github.com/statisticsforsocialscience/hcictools/actions)
 <!-- badges: end -->
 
 The goal of hcictools is to make frequently recurring tasks in our work easier.
