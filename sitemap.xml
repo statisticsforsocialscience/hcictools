@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://statisticsforsocialscience.github.io/hcictools/404.html</loc>
+  </url>
+  <url>
+    <loc>https://statisticsforsocialscience.github.io/hcictools/authors.html</loc>
+  </url>
+  <url>
     <loc>https://statisticsforsocialscience.github.io/hcictools/index.html</loc>
+  </url>
+  <url>
+    <loc>https://statisticsforsocialscience.github.io/hcictools/readme.html</loc>
   </url>
   <url>
     <loc>https://statisticsforsocialscience.github.io/hcictools/reference/add_scores.html</loc>
@@ -32,6 +41,9 @@
   </url>
   <url>
     <loc>https://statisticsforsocialscience.github.io/hcictools/reference/get_emm_plot.html</loc>
+  </url>
+  <url>
+    <loc>https://statisticsforsocialscience.github.io/hcictools/reference/index.html</loc>
   </url>
   <url>
     <loc>https://statisticsforsocialscience.github.io/hcictools/reference/load_surveymonkey_csv.html</loc>
