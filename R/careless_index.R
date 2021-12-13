@@ -97,9 +97,10 @@ careless_indices <- function(dat,
           df_likerts_numeric,
           flag = TRUE,
           confidence = 0.99,
-          plot = F
+          na.rm = TRUE,
+          plot = FALSE
         )
-      quality.indices$mahadraw <- temp$raw
+      quality.indices$mahadD <- temp$d_sq
       quality.indices$mahadflag <- temp$flagged
     }
 
