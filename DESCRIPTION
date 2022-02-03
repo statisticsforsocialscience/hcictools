@@ -1,7 +1,7 @@
 Package: hcictools
 Type: Package
 Title: Supplies tools for analysis in psychological surveys
-Version: 1.1.3
+Version: 1.1.4
 Date: 2021-01-20
 Authors@R: c(person("André", "Calero Valdez", role = c("aut", "cre"), email = "andrecalerovaldez@gmail.com"),
              person("Julian", "Hildebrandt", role = "ctb", email = "super-dude@gmx.de")
