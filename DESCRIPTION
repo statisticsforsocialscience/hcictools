@@ -12,10 +12,8 @@ LazyData: TRUE
 Suggests: testthat
 Imports: 
     corrplot,
-    tidyverse,
     magrittr,
     lubridate,
-    dplyr,
     readr,
     stringr,
     stats,
@@ -29,7 +27,7 @@ Imports:
     labelled,
     careless,
     jmv,
-    ggplot2
+    dplyr
 Encoding: UTF-8
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
 URL: https://statisticsforsocialscience.github.io/hcictools
