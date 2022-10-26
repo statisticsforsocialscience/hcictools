@@ -29,5 +29,5 @@ Imports:
     jmv,
     dplyr
 Encoding: UTF-8
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 URL: https://statisticsforsocialscience.github.io/hcictools

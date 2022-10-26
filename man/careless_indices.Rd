@@ -6,12 +6,15 @@
 \usage{
 careless_indices(
   dat,
-  speeder_analysis = "median/2",
+  speeder_analysis = F,
   likert_vector = NULL,
   duration_column = "Duration (in seconds)",
   id_column = "ResponseId",
   antonyms = TRUE,
-  synonyms = TRUE
+  critval_ant = -0.6,
+  synonyms = TRUE,
+  critval_syn = 0.6,
+  mahaD = TRUE
 )
 }
 \arguments{
@@ -33,7 +36,13 @@ we use "ResponseId", which is used by Qualtrix.}
 
 \item{antonyms}{Whether or not to test for psychometric antonyms (default: T)}
 
+\item{critval_ant}{Threshold for antonym analysis (default: -0.6)}
+
 \item{synonyms}{Whether or not to test for psychometric synonyms (default: T)}
+
+\item{critval_syn}{Threshold for synonym analysis (default: -0.6)}
+
+\item{mahaD}{Whether or not to test for mahalanobis distance with confidence of 0.99. (default: T)}
 }
 \value{
 Returns an updated dataframe containing indices
