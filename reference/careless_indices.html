@@ -50,12 +50,15 @@ negatively affect the metrics used in the careless package.</p>
     <div id="ref-usage">
     <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">careless_indices</span><span class="op">(</span></span>
 <span>  <span class="va">dat</span>,</span>
-<span>  speeder_analysis <span class="op">=</span> <span class="st">"median/2"</span>,</span>
+<span>  speeder_analysis <span class="op">=</span> <span class="cn">F</span>,</span>
 <span>  likert_vector <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  duration_column <span class="op">=</span> <span class="st">"Duration (in seconds)"</span>,</span>
 <span>  id_column <span class="op">=</span> <span class="st">"ResponseId"</span>,</span>
 <span>  antonyms <span class="op">=</span> <span class="cn">TRUE</span>,</span>
-<span>  synonyms <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span>  critval_ant <span class="op">=</span> <span class="op">-</span><span class="fl">0.6</span>,</span>
+<span>  synonyms <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  critval_syn <span class="op">=</span> <span class="fl">0.6</span>,</span>
+<span>  mahaD <span class="op">=</span> <span class="cn">TRUE</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -91,8 +94,20 @@ we use "ResponseId", which is used by Qualtrix.</p></dd>
 <dd><p>Whether or not to test for psychometric antonyms (default: T)</p></dd>
 
 
+<dt>critval_ant</dt>
+<dd><p>Threshold for antonym analysis (default: -0.6)</p></dd>
+
+
 <dt>synonyms</dt>
 <dd><p>Whether or not to test for psychometric synonyms (default: T)</p></dd>
+
+
+<dt>critval_syn</dt>
+<dd><p>Threshold for synonym analysis (default: -0.6)</p></dd>
+
+
+<dt>mahaD</dt>
+<dd><p>Whether or not to test for mahalanobis distance with confidence of 0.99. (default: T)</p></dd>
 
 </dl></div>
     <div id="value">
