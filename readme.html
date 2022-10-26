@@ -17,7 +17,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">hcictools</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.4</span>
       </span>
     </div>
 
@@ -38,16 +38,14 @@
     </div>
 
 <div id="hcictools" class="section level1">
-
-<!-- badges: start -->
-<p><a href="https://github.com/statisticsforsocialscience/hcictools/actions" class="external-link"><img src="https://github.com/statisticsforsocialscience/hcictools/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a> <!-- badges: end --></p>
+<!-- badges: start --><p><a href="https://github.com/statisticsforsocialscience/hcictools/actions" class="external-link"><img src="https://github.com/statisticsforsocialscience/hcictools/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a> <!-- badges: end --></p>
 <p>The goal of hcictools is to make frequently recurring tasks in our work easier.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a></h2>
 <p>You can install the released version of hcictools from <a href="https://CRAN.R-project.org" class="external-link">CRAN</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># install.packages("remotes")</span>
-<span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"statisticsforsocialscience/hcictools"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"statisticsforsocialscience/hcictools"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="package-contents">Package Contents<a class="anchor" aria-label="anchor" href="#package-contents"></a></h2>
@@ -58,19 +56,19 @@
 <div class="section level3">
 <h3 id="correlation-plots">Correlation Plots<a class="anchor" aria-label="anchor" href="#correlation-plots"></a></h3>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">8</span>,<span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">7</span><span class="op">)</span>
-<span class="va">b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">7</span>,<span class="fl">3</span>,<span class="fl">8</span>,<span class="fl">9</span>,<span class="fl">10</span><span class="op">)</span>
-<span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">2</span>,<span class="fl">5</span>,<span class="fl">2</span>,<span class="fl">5</span>,<span class="fl">2</span>,<span class="fl">1</span>,<span class="fl">5</span><span class="op">)</span>
-<span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>a <span class="op">=</span> <span class="va">a</span>, b <span class="op">=</span> <span class="va">b</span>, d <span class="op">=</span> <span class="va">d</span><span class="op">)</span>
-
-<span class="fu"><a href="reference/cor.matrix.plot.html">cor.matrix.plot</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">a</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>,<span class="fl">2</span>,<span class="fl">3</span>,<span class="fl">8</span>,<span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">7</span><span class="op">)</span></span>
+<span><span class="va">b</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">5</span>,<span class="fl">6</span>,<span class="fl">7</span>,<span class="fl">3</span>,<span class="fl">8</span>,<span class="fl">9</span>,<span class="fl">10</span><span class="op">)</span></span>
+<span><span class="va">d</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">4</span>,<span class="fl">2</span>,<span class="fl">5</span>,<span class="fl">2</span>,<span class="fl">5</span>,<span class="fl">2</span>,<span class="fl">1</span>,<span class="fl">5</span><span class="op">)</span></span>
+<span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span>a <span class="op">=</span> <span class="va">a</span>, b <span class="op">=</span> <span class="va">b</span>, d <span class="op">=</span> <span class="va">d</span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="reference/cor.matrix.plot.html">cor.matrix.plot</a></span><span class="op">(</span><span class="va">df</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-corplots-1.png" width="100%"></p>
 </div>
 <div class="section level3">
 <h3 id="confidence-interval-plots">Confidence Interval Plots<a class="anchor" aria-label="anchor" href="#confidence-interval-plots"></a></h3>
 <p>It has a confidence interval plotting feature for indepedent sample tests.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/plot_IS_meansCI.html">plot_IS_meansCI</a></span><span class="op">(</span><span class="va">a</span>, <span class="va">b</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/plot_IS_meansCI.html">plot_IS_meansCI</a></span><span class="op">(</span><span class="va">a</span>, <span class="va">b</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-ci-plot-1.png" width="100%"></p>
 </div>
 </div>
@@ -78,130 +76,128 @@
 <h2 id="rwth-palette">RWTH Palette<a class="anchor" aria-label="anchor" href="#rwth-palette"></a></h2>
 <p>Drawing palettes and RWTH Corporate CI Colors</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="reference/draw.palette.html">draw.palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span> <span class="fu"><a href="reference/rwth.colorpalette.html">rwth.colorpalette</a></span><span class="op">(</span><span class="op">)</span> <span class="op">)</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="reference/draw.palette.html">draw.palette</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/unlist.html" class="external-link">unlist</a></span><span class="op">(</span> <span class="fu"><a href="reference/rwth.colorpalette.html">rwth.colorpalette</a></span><span class="op">(</span><span class="op">)</span> <span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-corporate-1.png" width="100%"></p>
 </div>
 <div class="section level2">
 <h2 id="auto-code-scale">auto-code scale<a class="anchor" aria-label="anchor" href="#auto-code-scale"></a></h2>
 <p>Automatically extract item orientation and create mean score of items that have a prefix.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">newbfi</span> <span class="op">&lt;-</span> <span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="reference/auto_score.html">auto_score</a></span><span class="op">(</span><span class="st">"A"</span><span class="op">)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Adding scores for the A scale.</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; ===============================================================</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; ---------------------------------------------------Testing keys</span>
-<span class="co">#&gt; Reliability analysis   </span>
-<span class="co">#&gt;  raw_alpha std.alpha G6(smc) average_r S/N   ase mean  sd median_r</span>
-<span class="co">#&gt;       0.22      0.64    0.67      0.23 1.8 0.093   18 2.1     0.27</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; ------------------------------------------------Possible drops?</span>
-<span class="co">#&gt;     raw_alpha std.alpha   G6(smc) average_r       S/N   alpha se      var.r</span>
-<span class="co">#&gt; age 0.6401512 0.6735669 0.6765065 0.2921271 2.0634151 0.08165305 0.03274543</span>
-<span class="co">#&gt; A4  0.2039064 0.6541140 0.6725009 0.2744292 1.8911263 0.08524789 0.03775861</span>
-<span class="co">#&gt; A3  0.2014994 0.5838783 0.5972353 0.2191335 1.4031431 0.08112586 0.03278488</span>
-<span class="co">#&gt; A2  0.1909211 0.5791379 0.6054611 0.2158186 1.3760754 0.09053765 0.04011820</span>
-<span class="co">#&gt; A5  0.1579202 0.4883062 0.4966575 0.1602698 0.9542936 0.08427459 0.02453107</span>
-<span class="co">#&gt; A1- 0.1088703 0.5979811 0.6158001 0.2292806 1.4874455 0.10018208 0.04319743</span>
-<span class="co">#&gt;         med.r</span>
-<span class="co">#&gt; age 0.3202747</span>
-<span class="co">#&gt; A4  0.3022303</span>
-<span class="co">#&gt; A3  0.2217505</span>
-<span class="co">#&gt; A2  0.2368598</span>
-<span class="co">#&gt; A5  0.1280172</span>
-<span class="co">#&gt; A1- 0.1979787</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; ---------------------------------------------------Calculating scale</span>
-<span class="co">#&gt; Call: psych::scoreItems(keys = keys, items = data_set, min = 1, max = 6)</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; (Unstandardized) Alpha:</span>
-<span class="co">#&gt;          A</span>
-<span class="co">#&gt; alpha 0.22</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Standard errors of unstandardized Alpha:</span>
-<span class="co">#&gt;          A</span>
-<span class="co">#&gt; ASE   0.13</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Average item correlation:</span>
-<span class="co">#&gt;               A</span>
-<span class="co">#&gt; average.r 0.044</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Median item correlation:</span>
-<span class="co">#&gt;    A </span>
-<span class="co">#&gt; 0.27 </span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;  Guttman 6* reliability: </span>
-<span class="co">#&gt;             A</span>
-<span class="co">#&gt; Lambda.6 0.32</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Signal/Noise based upon av.r : </span>
-<span class="co">#&gt;                 A</span>
-<span class="co">#&gt; Signal/Noise 0.27</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt; Scale intercorrelations corrected for attenuation </span>
-<span class="co">#&gt;  raw correlations below the diagonal, alpha on the diagonal </span>
-<span class="co">#&gt;  corrected correlations above the diagonal:</span>
-<span class="co">#&gt;      A</span>
-<span class="co">#&gt; A 0.22</span>
-<span class="co">#&gt; </span>
-<span class="co">#&gt;  In order to see the item by scale loadings and frequency counts of the data</span>
-<span class="co">#&gt;  print with the short option = FALSE</span>
-<span class="co">#&gt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span>
-<span class="co">#&gt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">newbfi</span> <span class="op">&lt;-</span> <span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="fl">50</span><span class="op">)</span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="reference/auto_score.html">auto_score</a></span><span class="op">(</span><span class="st">"A"</span><span class="op">)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Adding scores for the A scale.</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ===============================================================</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ---------------------------------------------------Testing keys</span></span>
+<span><span class="co">#&gt; Reliability analysis   </span></span>
+<span><span class="co">#&gt;  raw_alpha std.alpha G6(smc) average_r S/N   ase mean  sd median_r</span></span>
+<span><span class="co">#&gt;       0.22      0.64    0.67      0.23 1.8 0.093   18 2.1     0.27</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ------------------------------------------------Possible drops?</span></span>
+<span><span class="co">#&gt;     raw_alpha std.alpha   G6(smc) average_r       S/N   alpha se      var.r</span></span>
+<span><span class="co">#&gt; age 0.6401512 0.6735669 0.6765065 0.2921271 2.0634151 0.08165305 0.03274543</span></span>
+<span><span class="co">#&gt; A4  0.2039064 0.6541140 0.6725009 0.2744292 1.8911263 0.08524789 0.03775861</span></span>
+<span><span class="co">#&gt; A3  0.2014994 0.5838783 0.5972353 0.2191335 1.4031431 0.08112586 0.03278488</span></span>
+<span><span class="co">#&gt; A2  0.1909211 0.5791379 0.6054611 0.2158186 1.3760754 0.09053765 0.04011820</span></span>
+<span><span class="co">#&gt; A5  0.1579202 0.4883062 0.4966575 0.1602698 0.9542936 0.08427459 0.02453107</span></span>
+<span><span class="co">#&gt; A1- 0.1088703 0.5979811 0.6158001 0.2292806 1.4874455 0.10018208 0.04319743</span></span>
+<span><span class="co">#&gt;         med.r</span></span>
+<span><span class="co">#&gt; age 0.3202747</span></span>
+<span><span class="co">#&gt; A4  0.3022303</span></span>
+<span><span class="co">#&gt; A3  0.2217505</span></span>
+<span><span class="co">#&gt; A2  0.2368598</span></span>
+<span><span class="co">#&gt; A5  0.1280172</span></span>
+<span><span class="co">#&gt; A1- 0.1979787</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; ---------------------------------------------------Calculating scale</span></span>
+<span><span class="co">#&gt; Call: psych::scoreItems(keys = keys, items = data_set, min = 1, max = 6)</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; (Unstandardized) Alpha:</span></span>
+<span><span class="co">#&gt;          A</span></span>
+<span><span class="co">#&gt; alpha 0.22</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Standard errors of unstandardized Alpha:</span></span>
+<span><span class="co">#&gt;          A</span></span>
+<span><span class="co">#&gt; ASE   0.13</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Average item correlation:</span></span>
+<span><span class="co">#&gt;               A</span></span>
+<span><span class="co">#&gt; average.r 0.044</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Median item correlation:</span></span>
+<span><span class="co">#&gt;    A </span></span>
+<span><span class="co">#&gt; 0.27 </span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  Guttman 6* reliability: </span></span>
+<span><span class="co">#&gt;             A</span></span>
+<span><span class="co">#&gt; Lambda.6 0.32</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Signal/Noise based upon av.r : </span></span>
+<span><span class="co">#&gt;                 A</span></span>
+<span><span class="co">#&gt; Signal/Noise 0.27</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt; Scale intercorrelations corrected for attenuation </span></span>
+<span><span class="co">#&gt;  raw correlations below the diagonal, alpha on the diagonal </span></span>
+<span><span class="co">#&gt;  corrected correlations above the diagonal:</span></span>
+<span><span class="co">#&gt;      A</span></span>
+<span><span class="co">#&gt; A 0.22</span></span>
+<span><span class="co">#&gt; </span></span>
+<span><span class="co">#&gt;  In order to see the item by scale loadings and frequency counts of the data</span></span>
+<span><span class="co">#&gt;  print with the short option = FALSE</span></span>
+<span><span class="co">#&gt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></span>
+<span><span class="co">#&gt; &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="careless-indices">Careless indices<a class="anchor" aria-label="anchor" href="#careless-indices"></a></h2>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">test_data</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span>
-    ResponseId <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span>,
-    `Duration (in seconds)` <span class="op">=</span> <span class="fu">stats</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span>, mean <span class="op">=</span> <span class="fl">100</span>, sd <span class="op">=</span> <span class="fl">50</span><span class="op">)</span>,
-    <span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span>
-
-
-  <span class="fu"><a href="reference/careless_indices.html">careless_indices</a></span><span class="op">(</span><span class="va">test_data</span>, 
-                   duration_column <span class="op">=</span> <span class="st">"Duration (in seconds)"</span>, 
-                   id_column <span class="op">=</span> <span class="st">"ResponseId"</span>, 
-                   likert_vector <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">28</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span>
-<span class="co">#&gt;   ResponseId Duration (in seconds) A1 A2 A3 A4 A5 C1 C2 C3 C4 C5 E1 E2 E3 E4 E5</span>
-<span class="co">#&gt; 1          1              53.39314  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4</span>
-<span class="co">#&gt; 2          2             152.96502  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3</span>
-<span class="co">#&gt; 3          3             167.10410  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5</span>
-<span class="co">#&gt; 4          4              76.27920  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4</span>
-<span class="co">#&gt; 5          5              79.68593  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5</span>
-<span class="co">#&gt; 6          6              92.59065  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6</span>
-<span class="co">#&gt;   N1 N2 N3 N4 N5 O1 O2 O3 O4 O5 gender education age speeder longstr   avgstr</span>
-<span class="co">#&gt; 1  3  4  2  2  3  3  6  3  4  3      1        NA  16   FALSE       3 1.444444</span>
-<span class="co">#&gt; 2  3  3  3  5  5  4  2  4  3  3      2        NA  18   FALSE       4 1.444444</span>
-<span class="co">#&gt; 3  4  5  4  2  3  4  2  5  5  2      2        NA  17   FALSE       3 1.300000</span>
-<span class="co">#&gt; 4  2  5  2  4  1  3  3  4  3  5      2        NA  17   FALSE       3 1.444444</span>
-<span class="co">#&gt; 5  2  3  4  4  3  3  3  4  3  3      1        NA  17   FALSE       3 1.444444</span>
-<span class="co">#&gt; 6  3  5  2  2  3  4  3  5  6  1      2         3  21   FALSE       3 1.181818</span>
-<span class="co">#&gt;         irv psychsyn mahadflag</span>
-<span class="co">#&gt; 1 0.9922779       NA     FALSE</span>
-<span class="co">#&gt; 2 1.3032504       NA     FALSE</span>
-<span class="co">#&gt; 3 1.1320506       NA     FALSE</span>
-<span class="co">#&gt; 4 1.2006409       NA     FALSE</span>
-<span class="co">#&gt; 5 1.0869860       NA     FALSE</span>
-<span class="co">#&gt; 6 1.8745256       NA     FALSE</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">test_data</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="fu">::</span><span class="fu"><a href="https://tibble.tidyverse.org/reference/tibble.html" class="external-link">tibble</a></span><span class="op">(</span></span>
+<span>    ResponseId <span class="op">=</span> <span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span>,</span>
+<span>    `Duration (in seconds)` <span class="op">=</span> <span class="fu">stats</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span>, mean <span class="op">=</span> <span class="fl">100</span>, sd <span class="op">=</span> <span class="fl">50</span><span class="op">)</span>,</span>
+<span>    <span class="fu">psych</span><span class="fu">::</span><span class="va"><a href="https://rdrr.io/pkg/psych/man/bfi.html" class="external-link">bfi</a></span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span>  <span class="fu"><a href="reference/careless_indices.html">careless_indices</a></span><span class="op">(</span><span class="va">test_data</span>, </span>
+<span>                   duration_column <span class="op">=</span> <span class="st">"Duration (in seconds)"</span>, </span>
+<span>                   id_column <span class="op">=</span> <span class="st">"ResponseId"</span>, </span>
+<span>                   likert_vector <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">3</span><span class="op">:</span><span class="fl">28</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="co">#&gt;   ResponseId Duration (in seconds) A1 A2 A3 A4 A5 C1 C2 C3 C4 C5 E1 E2 E3 E4 E5</span></span>
+<span><span class="co">#&gt; 1          1              53.39314  2  4  3  4  4  2  3  3  4  4  3  3  3  4  4</span></span>
+<span><span class="co">#&gt; 2          2             152.96502  2  4  5  2  5  5  4  4  3  4  1  1  6  4  3</span></span>
+<span><span class="co">#&gt; 3          3             167.10410  5  4  5  4  4  4  5  4  2  5  2  4  4  4  5</span></span>
+<span><span class="co">#&gt; 4          4              76.27920  4  4  6  5  5  4  4  3  5  5  5  3  4  4  4</span></span>
+<span><span class="co">#&gt; 5          5              79.68593  2  3  3  4  5  4  4  5  3  2  2  2  5  4  5</span></span>
+<span><span class="co">#&gt; 6          6              92.59065  6  6  5  6  5  6  6  6  1  3  2  1  6  5  6</span></span>
+<span><span class="co">#&gt;   N1 N2 N3 N4 N5 O1 O2 O3 O4 O5 gender education age speeder longstr   avgstr</span></span>
+<span><span class="co">#&gt; 1  3  4  2  2  3  3  6  3  4  3      1        NA  16   FALSE       3 1.444444</span></span>
+<span><span class="co">#&gt; 2  3  3  3  5  5  4  2  4  3  3      2        NA  18   FALSE       4 1.444444</span></span>
+<span><span class="co">#&gt; 3  4  5  4  2  3  4  2  5  5  2      2        NA  17   FALSE       3 1.300000</span></span>
+<span><span class="co">#&gt; 4  2  5  2  4  1  3  3  4  3  5      2        NA  17   FALSE       3 1.444444</span></span>
+<span><span class="co">#&gt; 5  2  3  4  4  3  3  3  4  3  3      1        NA  17   FALSE       3 1.444444</span></span>
+<span><span class="co">#&gt; 6  3  5  2  2  3  4  3  5  6  1      2         3  21   FALSE       3 1.181818</span></span>
+<span><span class="co">#&gt;         irv psychsyn mahadflag</span></span>
+<span><span class="co">#&gt; 1 0.9922779       NA     FALSE</span></span>
+<span><span class="co">#&gt; 2 1.3032504       NA     FALSE</span></span>
+<span><span class="co">#&gt; 3 1.1320506       NA     FALSE</span></span>
+<span><span class="co">#&gt; 4 1.2006409       NA     FALSE</span></span>
+<span><span class="co">#&gt; 5 1.0869860       NA     FALSE</span></span>
+<span><span class="co">#&gt; 6 1.8745256       NA     FALSE</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="extract-plots-from-jmv-models">Extract plots from JMV models<a class="anchor" aria-label="anchor" href="#extract-plots-from-jmv-models"></a></h2>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"> <span class="va">jmv_result</span> <span class="op">&lt;-</span> <span class="fu">jmv</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/jmv/man/ANOVA.html" class="external-link">ANOVA</a></span><span class="op">(</span>
-    data <span class="op">=</span> <span class="va">ToothGrowth</span>,
-    dep <span class="op">=</span> <span class="st">"len"</span>,
-    factors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"supp"</span>, <span class="st">"dose"</span><span class="op">)</span>,
-    emMeans <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>
-      <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"dose"</span>, <span class="st">"supp"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>
-
-
-  <span class="fu"><a href="reference/get_emm_plot.html">get_emm_plot</a></span><span class="op">(</span><span class="va">jmv_result</span><span class="op">)</span> <span class="op">+</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"test"</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span> <span class="va">jmv_result</span> <span class="op">&lt;-</span> <span class="fu">jmv</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/jmv/man/ANOVA.html" class="external-link">ANOVA</a></span><span class="op">(</span></span>
+<span>    data <span class="op">=</span> <span class="va">ToothGrowth</span>,</span>
+<span>    dep <span class="op">=</span> <span class="st">"len"</span>,</span>
+<span>    factors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"supp"</span>, <span class="st">"dose"</span><span class="op">)</span>,</span>
+<span>    emMeans <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span></span>
+<span>      <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"dose"</span>, <span class="st">"supp"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span></span>
+<span>  <span class="fu"><a href="reference/get_emm_plot.html">get_emm_plot</a></span><span class="op">(</span><span class="va">jmv_result</span><span class="op">)</span> <span class="op">+</span> <span class="fu">ggplot2</span><span class="fu">::</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"test"</span><span class="op">)</span></span></code></pre></div>
 <p><img src="reference/figures/README-jmv_plot-1.png" width="100%"><img src="reference/figures/README-jmv_plot-2.png" width="100%"></p>
 </div>
-<div class="section level2">
-<h2 id="tbc-more-to-follow">TBC More to follow<a class="anchor" aria-label="anchor" href="#tbc-more-to-follow"></a></h2>
-</div>
+<div class="section level2"><h2 id="tbc-more-to-follow">TBC More to follow<a class="anchor" aria-label="anchor" href="#tbc-more-to-follow"></a></h2></div>
 </div>
 
   </div>
@@ -219,7 +215,7 @@
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>

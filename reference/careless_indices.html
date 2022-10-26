@@ -19,7 +19,7 @@ negatively affect the metrics used in the careless package."><!-- mathjax --><sc
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">hcictools</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.3</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">1.1.4</span>
       </span>
     </div>
 
@@ -48,43 +48,58 @@ negatively affect the metrics used in the careless package.</p>
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu">careless_indices</span><span class="op">(</span>
-  <span class="va">dat</span>,
-  speeder_analysis <span class="op">=</span> <span class="st">"median/2"</span>,
-  likert_vector <span class="op">=</span> <span class="cn">NULL</span>,
-  duration_column <span class="op">=</span> <span class="st">"Duration (in seconds)"</span>,
-  id_column <span class="op">=</span> <span class="st">"ResponseId"</span>,
-  antonyms <span class="op">=</span> <span class="cn">TRUE</span>,
-  synonyms <span class="op">=</span> <span class="cn">TRUE</span>
-<span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu">careless_indices</span><span class="op">(</span></span>
+<span>  <span class="va">dat</span>,</span>
+<span>  speeder_analysis <span class="op">=</span> <span class="st">"median/2"</span>,</span>
+<span>  likert_vector <span class="op">=</span> <span class="cn">NULL</span>,</span>
+<span>  duration_column <span class="op">=</span> <span class="st">"Duration (in seconds)"</span>,</span>
+<span>  id_column <span class="op">=</span> <span class="st">"ResponseId"</span>,</span>
+<span>  antonyms <span class="op">=</span> <span class="cn">TRUE</span>,</span>
+<span>  synonyms <span class="op">=</span> <span class="cn">TRUE</span></span>
+<span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="arguments">
     <h2>Arguments</h2>
     <dl><dt>dat</dt>
 <dd><p>A data.frame that contains the survey data.</p></dd>
+
+
 <dt>speeder_analysis</dt>
 <dd><p>A criterion to test against speeders. The
 speeder_analysis parameter can be one of the following: median,
 median/2 (default), median/3, or a numeric value that is directly used
 as a threshold. Using FALSE will ignore speeder analysis.</p></dd>
+
+
 <dt>likert_vector</dt>
 <dd><p>A vector of indices that should be analyzed.</p></dd>
+
+
 <dt>duration_column</dt>
 <dd><p>A string that contains the name of the column that
 has the duration of survey responses. As a default we use
 Duration (in seconds), which is used by Qualtrix.</p></dd>
+
+
 <dt>id_column</dt>
 <dd><p>A string that contains the name of a id column. As a default
 we use "ResponseId", which is used by Qualtrix.</p></dd>
+
+
 <dt>antonyms</dt>
 <dd><p>Whether or not to test for psychometric antonyms (default: T)</p></dd>
+
+
 <dt>synonyms</dt>
 <dd><p>Whether or not to test for psychometric synonyms (default: T)</p></dd>
+
 </dl></div>
     <div id="value">
     <h2>Value</h2>
-    <p>Returns an updated dataframe containing indices</p>
+    
+
+<p>Returns an updated dataframe containing indices</p>
     </div>
 
   </div>
@@ -99,7 +114,7 @@ we use "ResponseId", which is used by Qualtrix.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
       </footer></div>
