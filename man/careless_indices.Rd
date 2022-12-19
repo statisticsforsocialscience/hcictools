@@ -6,49 +6,60 @@
 \usage{
 careless_indices(
   dat,
-  speeder_analysis = F,
   likert_vector = NULL,
-  duration_column = "Duration (in seconds)",
   id_column = "ResponseId",
-  antonyms = TRUE,
+  duration_column = "Duration (in seconds)",
+  speeder_analysis = "median/2",
+  critval_longstring = FALSE,
+  critval_avgstring = FALSE,
+  critval_irv_low = FALSE,
+  critval_irv_high = FALSE,
+  antonyms = FALSE,
   critval_ant = -0.6,
-  synonyms = TRUE,
+  synonyms = FALSE,
   critval_syn = 0.6,
-  mahaD = TRUE
+  mahaD = FALSE
 )
 }
 \arguments{
 \item{dat}{A data.frame that contains the survey data.}
+
+\item{likert_vector}{A vector containing the numeric addresses of the numeric likert items in dat.
+Leaving this parameter NULL (default) still allows for speeder analysis.
+#' @param id_column A string that contains the name of the id column. As a default
+we use "ResponseId", which is used by Qualtrics.
+#' @param duration_column A string that contains the name of the column that
+has the duration of survey responses. As a default we use
+Duration (in seconds), which is used by Qualtrics.}
 
 \item{speeder_analysis}{A criterion to test against speeders. The
 speeder_analysis parameter can be one of the following: median,
 median/2 (default), median/3, or a numeric value that is directly used
 as a threshold. Using FALSE will ignore speeder analysis.}
 
-\item{likert_vector}{A vector of indices that should be analyzed.}
+\item{critval_longstring}{A numeric as a threshold for longstring analysis. Longstrings will be flagged and not considered in further analysis.}
 
-\item{duration_column}{A string that contains the name of the column that
-has the duration of survey responses. As a default we use
-Duration (in seconds), which is used by Qualtrix.}
+\item{critval_avgstring}{A numeric as a threshold for average longstring analysis. Average longstrings will be flagged and not considered in further analysis.}
 
-\item{id_column}{A string that contains the name of a id column. As a default
-we use "ResponseId", which is used by Qualtrix.}
+\item{critval_irv_low}{A numeric as a lower threshold for inter response variance analysis. IRV will be flagged and not considered in further analysis.}
 
-\item{antonyms}{Whether or not to test for psychometric antonyms (default: T)}
+\item{critval_irv_high}{A numeric as an upper threshold for inter response variance analysis. IRV will be flagged and not considered in further analysis.}
 
-\item{critval_ant}{Threshold for antonym analysis (default: -0.6)}
+\item{antonyms}{Should psychometric antonyms be calculated?}
 
-\item{synonyms}{Whether or not to test for psychometric synonyms (default: T)}
+\item{critval_ant}{Threshold for antonym analysis (Default: -0.6)}
 
-\item{critval_syn}{Threshold for synonym analysis (default: -0.6)}
+\item{synonyms}{Should psychometric synonyms be calculated?}
 
-\item{mahaD}{Whether or not to test for mahalanobis distance with confidence of 0.99. (default: T)}
+\item{critval_syn}{Threshold for antonym analysis (Default: 0.6)}
+
+\item{mahaD}{Whether or not to test for mahalanobis distance with confidence of 0.99. (Default: False)}
 }
 \value{
 Returns an updated dataframe containing indices
 }
 \description{
 A function to detect careless survey responses using the careless package.
-The function has the improvement to first remove speeders, because they
-negatively affect the metrics used in the careless package.
+The big improvement is that subject with out of bounds individual criterions (speeders, longstring, average longstring and inter response variance)
+are automatically excluded from the calculation of inter-individual criterions (psychometric synonyms, psychometric antonyms and Mahananobis Distance).
 }
