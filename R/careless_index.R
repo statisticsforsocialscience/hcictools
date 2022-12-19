@@ -27,7 +27,7 @@
 #' @param critval_ant Threshold for antonym analysis (Default: -0.6)
 #' @param synonyms Should psychometric synonyms be calculated?
 #' @param critval_syn Threshold for antonym analysis (Default: 0.6)
-#' @param mahaD Whether or not to test for mahalanobis distance with confidence of 0.99. (Default: False)
+#' @param mahaD Whether or not to test for mahalanobis distance with confidence of 0.99. (Default: TRUE)
 #' @return Returns an updated dataframe containing indices
 #' @export
 #'
@@ -41,11 +41,11 @@ careless_indices <- function(dat,
                              critval_avgstring = FALSE,
                              critval_irv_low = FALSE,
                              critval_irv_high = FALSE,
-                             antonyms = FALSE,
+                             antonyms = TRUE,
                              critval_ant = -0.6,
-                             synonyms = FALSE,
+                             synonyms = TRUE,
                              critval_syn = 0.6,
-                             mahaD = FALSE)  {
+                             mahaD = TRUE)  {
 
 
   stopifnot("speeder_analysis must be either \"median\", \"median/2\",\"median/3\", FALSE, or a numeric value." =
