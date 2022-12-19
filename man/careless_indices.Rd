@@ -14,11 +14,11 @@ careless_indices(
   critval_avgstring = FALSE,
   critval_irv_low = FALSE,
   critval_irv_high = FALSE,
-  antonyms = FALSE,
+  antonyms = TRUE,
   critval_ant = -0.6,
-  synonyms = FALSE,
+  synonyms = TRUE,
   critval_syn = 0.6,
-  mahaD = FALSE
+  mahaD = TRUE
 )
 }
 \arguments{
@@ -53,7 +53,7 @@ as a threshold. Using FALSE will ignore speeder analysis.}
 
 \item{critval_syn}{Threshold for antonym analysis (Default: 0.6)}
 
-\item{mahaD}{Whether or not to test for mahalanobis distance with confidence of 0.99. (Default: False)}
+\item{mahaD}{Whether or not to test for mahalanobis distance with confidence of 0.99. (Default: TRUE)}
 }
 \value{
 Returns an updated dataframe containing indices
