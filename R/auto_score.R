@@ -23,6 +23,7 @@
 #' robo_care_raw %>% auto_score("KUT")
 #' }
 auto_score <- function(df, prefix) {
+  #df <- robo_care_raw
   #prefix <- "KUT"
   intermediate <- df %>%
     dplyr::select(dplyr::starts_with(prefix)) %>%
@@ -33,9 +34,10 @@ auto_score <- function(df, prefix) {
 
   #print(res)
   # generate fitting key list
-  key_list <- res$keys %>%
+  key_list <- res$keys[[1]] %>% # result of keys now is a list, must access first elem
     as.character() %>%
-    stringr::str_sub(start = 1, end = -2) %>%
+    #stringr::str_sub(start = 1, end = -2) %>%
+    # removed this line, as it caused problems
     paste0(names(res$keys)) %>% list()
 
   names(key_list) <- prefix
