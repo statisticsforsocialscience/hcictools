@@ -10,9 +10,10 @@
 #' @param dat A data.frame that contains the survey data.
 #' @param likert_vector A vector containing the numeric addresses of the numeric likert items in dat.
 #' Leaving this parameter NULL (default) still allows for speeder analysis.
-#' #' @param id_column A string that contains the name of the id column. As a default
+#' @param id_column A string that contains the name of the id column. As a default
 #' we use "ResponseId", which is used by Qualtrics.
-#' #' @param duration_column A string that contains the name of the column that
+#'
+#' @param duration_column A string that contains the name of the column that
 #' has the duration of survey responses. As a default we use
 #' Duration (in seconds), which is used by Qualtrics.
 #' @param speeder_analysis A criterion to test against speeders. The

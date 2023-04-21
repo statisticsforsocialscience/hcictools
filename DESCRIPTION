@@ -24,7 +24,6 @@ Imports:
     utils,
     glue,
     haven,
-    labelled,
     careless,
     jmv,
     dplyr

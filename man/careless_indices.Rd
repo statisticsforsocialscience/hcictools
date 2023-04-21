@@ -25,10 +25,12 @@ careless_indices(
 \item{dat}{A data.frame that contains the survey data.}
 
 \item{likert_vector}{A vector containing the numeric addresses of the numeric likert items in dat.
-Leaving this parameter NULL (default) still allows for speeder analysis.
-#' @param id_column A string that contains the name of the id column. As a default
-we use "ResponseId", which is used by Qualtrics.
-#' @param duration_column A string that contains the name of the column that
+Leaving this parameter NULL (default) still allows for speeder analysis.}
+
+\item{id_column}{A string that contains the name of the id column. As a default
+we use "ResponseId", which is used by Qualtrics.}
+
+\item{duration_column}{A string that contains the name of the column that
 has the duration of survey responses. As a default we use
 Duration (in seconds), which is used by Qualtrics.}
 
