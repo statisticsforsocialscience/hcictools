@@ -9,7 +9,9 @@ Authors@R: c(person("André", "Calero Valdez", role = c("aut", "cre"), email = "
 Description: This package contains tools that are useful when analyzing survey data. 
 License: CC0
 LazyData: TRUE
-Suggests: testthat
+Suggests: 
+    testthat,
+    usethis
 Imports: 
     corrplot,
     magrittr,
@@ -28,5 +30,5 @@ Imports:
     jmv,
     dplyr
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.1
 URL: https://statisticsforsocialscience.github.io/hcictools

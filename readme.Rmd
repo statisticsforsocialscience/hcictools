@@ -87,7 +87,9 @@ newbfi <- psych::bfi %>% head(50) %>% auto_score("A")
 
 ## Careless indices
 
-```{r}
+*Needs fixing*
+
+```r
 test_data <- tibble::tibble(
     ResponseId = 1:nrow(psych::bfi),
     `Duration (in seconds)` = stats::rnorm(nrow(psych::bfi), mean = 100, sd = 50),
