@@ -1,10 +1,10 @@
 Package: hcictools
 Type: Package
-Title: Supplies tools for analysis in psychological surveys
+Title: Tools for analyzing psychological surveys
 Version: 1.2.0
-Date: 2021-01-20
+Date: 2024-02-19
 Authors@R: c(person("André", "Calero Valdez", role = c("aut", "cre"), email = "andrecalerovaldez@gmail.com"),
-             person("Julian", "Hildebrandt", role = "ctb", email = "super-dude@gmx.de")
+             person("Julian", "Hildebrandt", role = c("ctb"), email = "super-dude@gmx.de")
              )
 Description: This package contains tools that are useful when analyzing survey data. 
 License: CC0
@@ -33,4 +33,4 @@ Imports:
     dplyr
 Encoding: UTF-8
 RoxygenNote: 7.3.1
-URL: https://statisticsforsocialscience.github.io/hcictools, https://statisticsforsocialscience.github.io/hcictools/
+URL: https://statisticsforsocialscience.github.io/hcictools

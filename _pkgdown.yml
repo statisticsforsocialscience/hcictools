@@ -1,4 +1,5 @@
 url: https://statisticsforsocialscience.github.io/hcictools/
 template:
   bootstrap: 5
-
+development:
+  mode: auto
